@@ -27,6 +27,18 @@ public class Usuario {
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String senha;
+	
+	
+	//construtores para fazer os testes
+public Usuario() {
+		
+	}
+	
+	public Usuario(String nome, String usuario, String senha) {
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
 
 	public long getId() {
 		return id;
