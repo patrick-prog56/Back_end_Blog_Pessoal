@@ -33,7 +33,7 @@ public class Postagem {
 	
 	
 	@NotNull //diz que esse campo nÃ£o pode ser nulo
-	@Size (min = 10, max=500) // Diz o tamanho que vai ter o campo
+	@Size (min = 1, max=500) // Diz o tamanho que vai ter o campo
 	private String texto;
 	
 	
@@ -44,6 +44,10 @@ public class Postagem {
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Tema tema;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
 
 
 	public long getId() {
@@ -84,6 +88,14 @@ public class Postagem {
 
 	public void setTema(Tema tema) {
 		this.tema = tema;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 	

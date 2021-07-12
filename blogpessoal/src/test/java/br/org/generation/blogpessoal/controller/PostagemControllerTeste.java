@@ -25,8 +25,8 @@ public class PostagemControllerTeste {
 	
 	@BeforeAll
 	public void start() {
-		postagem = new Postagem("titulo", "texto");
-		postagemupd = new Postagem(2L);
+		//postagem = new Postagem("titulo", "texto");
+		//postagemupd = new Postagem(2L);
 	}
 
 }
