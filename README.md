@@ -1,0 +1,1 @@
+Back end do meu blog pessoal. Blog este que possibilita a criação de usuario, logar, criar temas e fazer postagens. Feito com Java, Framework spring boot, e o banco de dados MySql, desenvolvido por mim.
